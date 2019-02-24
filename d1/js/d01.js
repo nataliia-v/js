@@ -1,59 +1,59 @@
  'use strict'
 
 
-// var year = 2018;
-// let month = "November";
-// const date = 27;
-// let number = 10;
-// let newNumber = 50;
-// let numBer = 100;
+var year = 2018;
+let month = "November";
+const date = 27;
+let number = 10;
+let newNumber = 50;
+let numBer = 100;
 
-// let peoplename = 'Bob';
-// let peopleName = 'Bob';
+let peoplename = 'Bob';
+let peopleName = 'Bob';
 
-// const UAH = 8;
+const UAH = 8;
 
-// // let sum = number + numBer;
-// // console.log(sum);
+// let sum = number + numBer;
+// console.log(sum);
 
-// // let sumOne = number + newNumber * numBer;
-// // console.log('privet', sumOne);
-// // alert('bbdbdbdb', sumOne);  //выводит сообщеник с "ok"
-// // const answer1 = confirm('Are you ready?'); //да, нет
+// let sumOne = number + newNumber * numBer;
+// console.log('privet', sumOne);
+// alert('bbdbdbdb', sumOne);  //выводит сообщеник с "ok"
+// const answer1 = confirm('Are you ready?'); //да, нет
 
 
-// // const name = prompt('What is your name?'); //для сбора данных
-// // console.log(name);
-// // alert(`hello, ${name}`);
-
+// const name = prompt('What is your name?'); //для сбора данных
+// console.log(name);
+// alert(`hello, ${name}`);
+//
 // console.log(typeof number);
 // console.log(typeof month);
 // console.log(typeof date === typeof number);
-
+//
 // console.log(month.length);
 // console.log(month.indexOf('N'));
 // console.log(month.indexOf('w'));
 // console.log(month.includes('Nov'));
 // console.log(month.includes('nov'));
-
+//
 // const fontSize = '5.5px';
 // const userLength = 20;
-
+//
 // // console.log('Преобразовать в целое число', Number.parseInt(fontSize));
 // // console.log('Преобразовать в число с дробью', Number.parseFloat(fontSize));
-
+//
 // console.log(Number(fontSize));
-
+//
 // console.log('Проверка на число', Number.isNaN (Number(fontSize)));
 // console.log('Проверка на число', Number.isNaN (userLength));
 // console.log(typeof fontSize);
-
-
+//
+//
 // const name = 'John';
 // const surname = 'Connor';
 // const years = 40;
 // const height = 180;
-
+//
 // console.log ('Message:',
 // `Hello ${name} ${surname}. I'm ${years} and ${height + 2 + 'sm'}.`);
 
@@ -299,37 +299,37 @@
     4 - "Каталог отелей ****"
     5 - "Каталог лучших отелей"
 */
-
-const promtValue = prompt ('ввести число от 1 до 5');
- 
-if (Number.isInteger (+promtValue) && (promtValue >0 && promtValue <= 5) ){
-
-switch (+promtValue){
-  case 1 :
-  alert ('каталог хостелов')
-  break;
-  case 2 :
-  alert ('каталог бюджетных отелей')
-  break;
-  case 3 :
-  alert ('каталог отелей ***')
-  break;
-  case 4 :
-  alert ('каталог отелей ****')
-  break;
-  case 5 :
-  alert ('каталог best отелей')
-  break;
-}
-
-
-} else if (promtValue === null) {
-  alert ("soory, try again")
-
-} else {
-  alert ('Неверный ввод')
-}
-
+//
+// const promtValue = prompt ('ввести число от 1 до 5');
+//
+// if (Number.isInteger (+promtValue) && (promtValue >0 && promtValue <= 5) ){
+//
+// switch (+promtValue){
+//   case 1 :
+//   alert ('каталог хостелов')
+//   break;
+//   case 2 :
+//   alert ('каталог бюджетных отелей')
+//   break;
+//   case 3 :
+//   alert ('каталог отелей ***')
+//   break;
+//   case 4 :
+//   alert ('каталог отелей ****')
+//   break;
+//   case 5 :
+//   alert ('каталог best отелей')
+//   break;
+// }
+//
+//
+// } else if (promtValue === null) {
+//   alert ("soory, try again")
+//
+// } else {
+//   alert ('Неверный ввод')
+// }
+//
 
 
 

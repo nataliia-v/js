@@ -10,10 +10,10 @@ do {
   console.log(someNumbers);
 } while(userInput);
 
-if (someNumbers.length  !==0){
+if (someNumbers.length  !== 0) {
 
-  for (const iteration of someNumbers) {
-    sum += iteration;
+  for (const number of someNumbers) {
+    sum += number;
   }
 }
 
