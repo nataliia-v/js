@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c1ef0-aefd-47ff-8ba2-f4f63247c2e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d1/js/d01.js" beforeDir="false" afterPath="$PROJECT_DIR$/d1/js/d01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3/d3.html" beforeDir="false" afterPath="$PROJECT_DIR$/d3/d3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3/js/d3.js" beforeDir="false" afterPath="$PROJECT_DIR$/d3/js/d3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/js/hw2.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/js/hw2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d05/d3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d05/js/d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/js/hw3.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/js/hw3.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/if-else_switch-case/js/if.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -50,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/tasks/if-else_switch-case/if.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -59,16 +58,52 @@
         <entry file="file://$PROJECT_DIR$/hw3/hw3.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw3/js/hw3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            <state relative-caret-position="463">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/d05/d5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/d05/js/d05.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="203" column="3" lean-forward="true" selection-start-line="203" selection-start-column="3" selection-end-line="203" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw4/hw4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw4/js/hw4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -95,7 +130,11 @@
         <option value="$PROJECT_DIR$/tasks/arrays_and_objects/js/arrays.js" />
         <option value="$PROJECT_DIR$/tasks/if-else_switch-case/if.html" />
         <option value="$PROJECT_DIR$/tasks/if-else_switch-case/js/if.js" />
+        <option value="$PROJECT_DIR$/hw4/hw4.html" />
+        <option value="$PROJECT_DIR$/hw4/js/hw4.js" />
         <option value="$PROJECT_DIR$/hw3/js/hw3.js" />
+        <option value="$PROJECT_DIR$/d05/d5.html" />
+        <option value="$PROJECT_DIR$/d05/js/d05.js" />
       </list>
     </option>
   </component>
@@ -121,13 +160,18 @@
             <path>
               <item name="js" type="b2602c69:ProjectViewProjectNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
+              <item name="d05" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="js" type="b2602c69:ProjectViewProjectNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
+              <item name="d05" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="hw4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="js" type="b2602c69:ProjectViewProjectNode" />
@@ -184,12 +228,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550688122209</updated>
       <workItem from="1550688123560" duration="75079000" />
-      <workItem from="1550937205370" duration="33065000" />
+      <workItem from="1550937205370" duration="48068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108144000" />
+    <option name="totallyTimeSpent" value="123147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -328,31 +372,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/if-else_switch-case/if.html">
+    <entry file="file://$PROJECT_DIR$/hw4/hw4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/if-else_switch-case/js/if.js">
+    <entry file="file://$PROJECT_DIR$/hw4/js/hw4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="216">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw3/hw3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/d05/d5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw3/js/hw3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        <state relative-caret-position="463">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/d05/js/d05.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="203" column="3" lean-forward="true" selection-start-line="203" selection-start-column="3" selection-end-line="203" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/if-else_switch-case/if.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/if-else_switch-case/js/if.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

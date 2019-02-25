@@ -28,6 +28,7 @@ const addLogin = function(logins, login) {
     console.log('Такой логин уже используется!')
   }
 };
+
 //Проверка
 addLogin(logins,'Ajax'); // 'Логин успешно добавлен!'
 addLogin(logins,'robotGoogles'); // 'Такой логин уже используется!'
