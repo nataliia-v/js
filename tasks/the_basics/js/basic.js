@@ -182,7 +182,28 @@
 // num --;
 // console.log(num);
 
+//1
 
+
+// for (let i = 1;  i <= 100; i++) {
+//   console.log(i);
+// }
+
+//2
+
+// for (let i = 11; i <=33; i++){
+//   console.log(i)
+// }
+
+//3
+
+// for (let i = 1; i <=100; i++){
+//   if (i%2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+//4
 
 
 

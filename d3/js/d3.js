@@ -826,4 +826,658 @@
 
 
 
+///////////    ПОВТОРЕНИЕ       ///////
+
+// const addition = function (a, b, c) { /////   FUNCTION EXPRESSION
+//   return a + b + c;
+// };
+//
+// let kfr = addition(4,5,7);
+// console.log(kfr);
+// console.log(addition(2,4,7)); 
+    
+
+// function add (a, b, c){  //  FUNCTION DECLARATION  (можно вызвать до обьявления в коде)
+//   return a + b + c;
+// }  
+// const testDays = function (name = "User", days = "30") {
+// //   return `Name - ${name}, used ${days} tests days`;
+// // };
+// //
+// // let user1 = (testDays("Nadya", 12))
+// // console.log(user1);
+
+
+// TASK 1
+/*
+  Напишите функцию checkNumberType(num)
+  
+  Функция получает число num как аргумент и возвращает 
+  строку "Even" если число четное и строку "Odd" если не четное.
+*/
+
+// function checkNumberType(num){
+//   if (num % 2 === 0){
+//     return ("Even");
+//   } else if (num % 2 === 1) {
+//     return ("Odd");
+//   }
+//
+// }
+//
+// // Вызовы функции для проверки
+// console.log( checkNumberType(2) ); // 'Even'
+//
+// console.log( checkNumberType(46) ); // 'Even'
+// //
+// console.log( checkNumberType(3) ); // 'Odd'
+// //
+// console.log( checkNumberType(17) ); // 'Odd'
+
+/*
+  Напишите функцию formatString(str)
+
+  - Функия принимает на вход строку str
+  - Если длина строки не превышает 40 символов, функция возвращает ее.
+  - Если длина больше 40 символов, то функция обрезает строку до 40-ти
+    символов и добавляет в конец строки троеточие '...', после чего
+    возвращает укороченную версию.
+*/
+
+
+// TASK 2
+//
+// function formatString(str) {
+// // let lengthStr = str.length;
+// //   return lengthStr;
+//   if (str.length < 40){
+//     return str;
+//   } else {
+//     let strLength = str.substr(0, 40);
+//
+//    return strLength + " ...";
+//
+// }}
+//
+// // Вызовы функции для проверки
+// console.log(
+//   formatString("Curabitur ligula sapien, tincidunt non.")
+// ); // вернется оригинальная строка
+// //
+// console.log(
+//   formatString("Vestibulum facilisis, purus nec pulvinar iaculis.")
+// ); // вернется форматированная строка
+//
+// console.log(
+//   formatString("Curabitur ligula sapien.")
+// ); // вернется оригинальная строка
+//
+// console.log(formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."));
+// // вернется форматированная строка
+
+
+
+// TASK 3
+
+// /*
+//   Напишите функцию checkForSpam(str)
+//
+//   Функция принимает 1 параметр str - строку,
+//   и проверять ее на содержание слов: spam и sale
+//
+//   Если нашли зарещенное слово то функция возвращает true,
+//   если запрещенных слов нет функция возвращает false
+//
+//   PS: слова могут быть в произвольном регистре
+// */
+//
+// function checkForSpam(str){
+//   if (str.toLowerCase().includes("spam") || str.toLowerCase().includes("sale")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+//
+// // Вызовы функции для проверки
+// console.log( checkForSpam('Latest technology news') ); // false
+//
+// console.log( checkForSpam('JavaScript weekly newsletter') ); // false
+//
+// console.log( checkForSpam('Get best sale offers now!') ); // true
+//
+// console.log( checkForSpam('[SPAM] How to earn fast money?') ); // true
+
+
+// TASK 4
+
+/*
+  Написать функцию, getPx(str)
+
+  Функция getPx должна получать строку вида '10px',
+  проверять была ли передана строка, если да,
+  возвращать только числовую составляющую, к примеру 10.
+
+  Если была передана не строка, функция возвращает null.
+*/
+//
+// function getPx(str){
+//
+//   if(typeof str === "string"){
+//     return parseFloat(str);
+//   }else {
+//     return null;
+//   }
+// };
+//
+// // Вызовы функции для проверки
+// console.log( getPx("10px") === 10 ); // должно быть:  true
+// console.log( getPx("10.5") === 10.5 ); // должно быть:  true
+// console.log( getPx("0") === 0 ); // должно быть:  true
+// console.log( getPx(-1) ); // должно быть:  null
+// console.log( getPx(10) ); // должно быть:  null
+
+
+// // TASK 5
+// /*
+//   Создайте фукнцию findLongestWord(str),
+//   которая получает аргументом произвольную строку и
+//   возвращает самое длинное слово в этой строке.
+//
+//   Важное условие - в строке могут быть только пробелы,
+//   символы букв и цифр!
+// */
+
+
+// function findLongestWord(str){
+//   let arr  = str.split(" ");
+//   let longestWord = arr[0]
+//
+//
+//   for (let num of arr) {
+//     if (num.length > longestWord.length) {
+//       longestWord = num ;
+//     }
+//   }
+//   return longestWord;
+// }
+//
+// // Вызовы функции для проверки
+// console.log(
+//   findLongestWord("The quick brown fox jumped over the lazy dog")
+// ); // вернет 'jumped'
+//
+// console.log(
+//   findLongestWord("Google do a roll")
+// ); // вернет 'Google'
+//
+// console.log(
+//   findLongestWord("May the force be with you")
+// ); // вернет 'force'
+
+
+
+// // TASK 6
+
+
+/*
+  Создайте функцию findLargestNumber(numbers),
+  которая получает массив чисел numbers, и возвращает
+  самое большое число в массиве.
+*/
+
+// function findLargestNumber(numbers){
+//
+//   let i = 0;
+//    for (let num of numbers){
+//      if(num > i ){
+//        i = num ;
+//      }
+//    }
+//   return i ;
+// }
+//
+// // Вызовы функции для проверки
+// console.log(
+//   findLargestNumber([1, 2, 3])
+// ); // вернет 3
+//
+// console.log(
+//   findLargestNumber([27, 12, 18, 5])
+// ); // вернет 27
+//
+// console.log(
+//   findLargestNumber([31, 128, 14, 74])
+// ); // вернет 128
+
+// // TASK 7
+
+/*
+  Есть массив уникальных чисел uniqueNumbers.
+
+  Написать функцию, addUniqueNumbers(...),
+  которая получает произвольное кол-во чисел как аргументы,
+  и добавляет в массив uniqueNumbers только уникальные,
+  а те которые в массиве уже есть игнорирует.
+*/
+
+// const uniqueNumbers  = [2, 1, 4, 9];
+
+// function addUniqueNumbers(...args){
+//
+//
+//   for (let num of args) {
+//     if (!uniqueNumbers.includes(num)) {
+//      uniqueNumbers.push(num);
+//     }
+//   }
+// return uniqueNumbers;
+// }
+
+//
+// const uniqueNumbers = [3,6,3,19,1,12];
+//
+// function addUniqueNumbers(...arg){
+//
+//   for (num of arg){
+//     if (!uniqueNumbers.includes(num)){
+//       uniqueNumbers.push(num)
+//     }
+//   }
+//   return num;
+// }
+//
+// // Вызовы функции для проверки
+// addUniqueNumbers(1, 2, 3);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3]
+//
+// addUniqueNumbers(12, 2, 3, 19);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3, 12, 19]
+//
+// addUniqueNumbers(4, 5, 12, 3, 1, 2, 8);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
+
+
+// // TASK 8
+
+/*
+  Напишите функцию filterFromArray(arr), которая
+  объявляет 1 параметр, исходный массив arr.
+
+  При вызове функции, первым аргументом всегда будет массив чисел,
+  за которым следуют один или несколько аргументов, тоже чисел.
+
+  Функция возвращает новый массив, который содержит только
+  те элементы исходного массива, которые не совпадают
+  ни с одним из числовых аргументов.
+*/
+
+
+
+// const filterFromArray = function(arr, ...arg) {
+//   let newArr = arr;
+//   for (let num of arg) {
+//     if (newArr.includes(num)){
+//       newArr.splice(newArr.indexOf(num), 1)
+//     }
+//   }
+//   return newArr;
+// };
+//
+// // Вызовы функции для проверки
+// console.log(
+//   filterFromArray([1, 2, 3, 4, 5], 2, 4)
+// ); // [1, 3, 5]
+//
+// console.log(
+//   filterFromArray([12, 4, 3, 8, 17], 3, 29, 18, 4)
+// ); // [12, 8, 17]
+
+
+
+
+
+
+
+
+
+       //                                ОБЬЕКТЫ
+// // TASK 1
+
+/*
+  Напишите скрипт, который, для объекта user, последовательно:
+
+    - добавляет поле mood со значением 'happy'
+
+    - заменяет значение hobby на 'javascript'
+
+    - удаляет свойство premium
+
+    - выводит содержимое объекта user в формате ключ:значение
+      используя цикл for...in
+
+    - выводит содержимое объекта user в формате ключ:значение
+      используя Object.keys и for...of
+
+    - выводит содержимое объекта user в формате ключ:значение
+      используя Object.entries и for...of
+*/
+
+// const user = {
+//   name: "Mango",
+//   age: 20,
+//   hobby: "html",
+//   premium: true
+// };
+//
+// user.mood = "happy";
+// user.hobby = "javascript";
+// delete user.premium;
+//
+// for (const key in user) {    //////////////  for in
+//   console.log(`${key} : ${user[key]}`);
+// }
+//
+// const keys = Object.keys(user); ////////// keys
+// for (const key of keys) {
+//   console.log(key, user[key] )
+// }
+//
+// const entries = Object.entries(user); /////////  entries
+// for (const entry of entries) {
+//   const key = entry[0];
+//   const value = entry[1];
+//   console.log(`${key}: ${value}`)
+// }
+
+// // TASK 2
+
+/*
+  Напиште скрипт который определит и выведет в консоль
+  имя сотрудника который выполнил больше всех задач.
+
+  Сотрудники и кол-во выполненых задач содержатся
+  как свойства объекта в формате "имя":"кол-во задач"
+*/
+
+// const tasksCompleted = {
+//   ann: 29,
+//   david: 35,
+//   helen: 1,
+//   lorence: 99
+// };
+//
+// let maxNum  = 0;
+// let winner;
+// for (const key in tasksCompleted) {
+//   if (tasksCompleted[key] >  maxNum){
+//     maxNum = tasksCompleted[key];
+//     winner = key;
+//   }
+// }
+// console.log(`${winner} : ${maxNum}`)
+
+
+// // TASK 3
+
+
+/*
+  Напишите функцию countProps(obj),
+  считающую кол-во свойств в объекте.
+  Функция возвращает количество свойств.
+*/
+
+// function countProps(obj){
+//    return Object.keys(obj).length;
+// };
+//
+//
+// // Вызовы функции для проверки
+// console.log(
+//   countProps({})
+// ); // 0
+//
+// console.log(
+//   countProps({a: 1, b: 3, c: 'hello'})
+// ); // 3
+
+// // TASK 4
+
+/*
+  Создайте функцию isObjectEmpty(obj), которая получает
+  один аргумент obj - объект, и проверяет пуст ли он (есть ли в нем свойства).
+
+  Возвращает true если объект пустой, false если не пустой.
+*/
+
+
+// function isObjectEmpty(obj){
+
+  // for (let i in obj){                   /// вариант 1
+  //   if (obj.hasOwnProperty(i)) {
+  //     return false;
+  //   }else {
+  //     return true;
+  // }}
+
+  // if (Object.keys(obj).length === 0){ ///   вариант 2
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+
+// }
+
+// // Вызовы функции для проверки
+// console.log(
+//   isObjectEmpty({})
+// ); // true
+//
+// console.log(
+//   isObjectEmpty({a: 1})
+// ); // false
+//
+// console.log(
+//   isObjectEmpty({a: 1, b: 2})
+// ); // false
+
+
+// // TASK 5
+
+/*
+  Напишите функцию countTotalSalary(salaries),
+  получающую объект и считающую общую сумму запрплаты работников.
+
+  Каждое поле объекта передаваемого в функцию, имеет вид "имя":"зарплата"
+
+  Функция возвращает общую сумму зарплаты.
+*/
+
+// function countTotalSalary(salaries){
+//   let sum;
+//   let array = Object.values(salaries);
+//   for (let object of array) {
+//     sum += object;
+//   }
+//   return sum;
+// }
+//
+// // Вызовы функции для проверки
+// console.log(countTotalSalary({})
+// ); // 0
+//
+// console.log(countTotalSalary({
+//     mango: 100,
+//     poly: 150,
+//     alfred: 80
+//   })
+// ); // 330
+
+
+// // TASK 6
+/*
+  Напишите функцию getAllPropValues(arr, prop),
+  которая получает массив объектов и имя ключа,
+  возвращает массив значений определенного поля prop
+  из каждого объекта в массиве
+*/
+
+// function getAllPropValues(arr, prop){
+// //   let arrOfProps = [];
+// //   for(let object of arr){
+// //     if (object.hasOwnProperty(prop)){
+// //       arrOfProps.push(object[prop]);
+// //     }
+// //   }
+// //   return arrOfProps;
+// // }
+// //
+// // const users = [
+// //   { name: 'Poly', age: 7, mood: 'happy' },
+// //   { name: 'Mango', age: 4, mood: 'blissful'},
+// //   { name: 'Ajax', age: 3, mood: 'tired' }
+// // ];
+// //
+// // // Вызовы функции для проверки
+// // console.log(
+// //   getAllPropValues(users, 'name')
+// // ); // ['Poly', 'Mango', 'Ajax']
+// //
+// // console.log(
+// //   getAllPropValues(users, 'mood')
+// // ); // ['happy', 'blissful', 'tired']
+// //
+// // console.log(
+// //   getAllPropValues(users, 'active')
+// // ); // []
+
+
+// // TASK 7
+
+/*
+  Напишите код, который бы  с помощью
+  функции-конструкора User, позволял создавать
+  объекты пользователя со следующим свойствами:
+    - name - строка (имя)
+    - isActive - буль (активен)
+    - age - число (возраст)
+    - friends - число (кол-во друзей)
+
+  Имя, активность, возраст и друзей, необходимо передать
+  как аргументы при вызове конструктора.
+
+  Добавить метод getUserInfo(), которая, выводит строку:
+  `User ${имя} is ${возраст} years old and has ${кол-во друщзей} friends`
+
+  Создать несколько объектов пользователя User и с помощью
+  функции getUserInfo вывести строку в консоль.
+*/
+
+// const User = function (name, isActive, age, friends){
+//   this.name = name;
+//   this.isActive = isActive;
+//   this.age = age;
+//   this.friends = friends;
+// }
+// this.getUserInfo = function(){
+//   console.log(`User ${name} is ${age} years old and has ${age} friends`);
+// };
+//
+// let user = new User ('Kate', true, 24, 43);
+// console.log(user);
+
+// // TASK 8
+
+/*
+  Расставьте отсутствующие this в методах объекта store
+*/
+//
+// const store = {
+//   products: ['bread', 'cheese', 'milk', 'apples'],
+//   managers: ['poly', 'mango', 'ajax'],
+//
+//
+//   addManager(manager) {
+//     this.managers.push(manager);
+//
+//     console.log(this.managers);
+//   },
+//   removeManager(manager) {
+//     const idx = this.managers.indexOf(manager);
+//
+//     this.managers.splice(idx, 1);
+//
+//     console.log(this.managers);
+//   },
+//   getProducts() {
+//     console.log(this.products);
+//
+//     return this.products;
+//   }
+// }
+//
+// store.addManager('chelsey'); // ['poly', 'mango', 'ajax', 'chelsey']
+//
+// store.removeManager('mango'); // ['poly', ajax', 'chelsey']
+//
+// store.getProducts(); // ['bread', 'cheese', 'milk', 'apples']
+
+
+// // TASK 9
+
+/*
+  Расставьте отсутствующие this в конструкторе объектов Account
+*/
+
+// function Account(login, password, type = "regular") {
+//   this.login = login;
+//   this.password = password;
+//   this.type = type;
+//
+//   changePassword = function(newPassword) {
+//     this.password = newPassword;
+//
+//     console.log(this.password);
+//   };
+//
+//   getAccountInfo = function() {
+//     console.log(`
+//       Login: ${login},
+//       Pass: ${password},
+//       Type: ${type}
+//     `);
+//   };
+// }
+//
+// const account = new Account("Mango", "qwe123", "premium");
+//
+// console.log(account.login); // 'Mango'
+// console.log(account.password); // 'qwe123'
+// console.log(account.type); // 'premium'
+//
+// account.changePassword("asdzxc"); // 'asdzxc'
+//
+// account.getAccountInfo(); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

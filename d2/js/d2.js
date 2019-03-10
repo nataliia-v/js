@@ -447,37 +447,240 @@
 // const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
 // let attempts = 3;
 
+//
+// const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
+// let attempts = 3;
+//
+// let inputPassword;
+//
+// do {
+//   inputPassword = prompt('Enter password: ');
+//
+//   if (passwords.includes(inputPassword)) {
+//     alert('Добро пожаловать!');
+//     break;
+//   }
+//
+//   else if (inputPassword !== null) {
+//     attempts -= 1;
+//
+//     if(attempts > 0){
+//       alert(`Неверный пароль, у вас осталось ${attempts} попыток`);
+//     }
+//
+//     else {
+//       alert('У вас закончились попытки, аккаунт заблокирован!');
+//     }
+//   }
+// } while (attempts > 0 && inputPassword !== null);
+//
+//  доп задание 1
+/*
+  Есть массив имен пользователей.
+  В первом console.log вывести длину массива.
 
-const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
-let attempts = 3;
+  В последующих console.log дополнить конструкцию
+  так, чтобы в консоль вывелись указаные в комментариях
+  элементы массива.
+*/
 
-let inputPassword;
-
-do {
-  inputPassword = prompt('Enter password: ');
-
-  if (passwords.includes(inputPassword)) {
-    alert('Добро пожаловать!');
-    break;
-  }
-
-  else if (inputPassword !== null) {
-    attempts -= 1;
-
-    if(attempts > 0){
-      alert(`Неверный пароль, у вас осталось ${attempts} попыток`);
-    }
-
-    else {
-      alert('У вас закончились попытки, аккаунт заблокирован!');
-    }
-  }
-} while (attempts > 0 && inputPassword !== null);
+// const users = ['Mango', 'Poly', 'Ajax', 'Chelsey'];
+//
+// console.log(users); // 4
+//
+// console.log(users[1]); // Poly
+// console.log(users[3]); // Chelsey
+// console.log(users[0]); // Mango
+// console.log(users[2]); // Ajax
 
 
+//
+// //  доп задание 2
+// /* Есть массив имен пользователей */
+//
+// const users = ["Mango", "Poly", "Ajax", "Chelsey"];
+//
+// /* Используя методы массива, последовательно выполнить следующие операции */
+//
+// // Удалить из начала массива нулевой элемент
+// users.shift();
+// console.log(users); // ["Poly", "Ajax", "Chelsey"]
+//
+// // // Удалить из конца массив последний элемент
+// // console.log(users); // ["Poly", "Ajax"]
+// //
+// // // Добавить в начало массива любое имя
+// // console.log(users); // ["добавленое имя", "Poly", "Ajax"]
+// //
+// // // Добавить в конец массива два любых имени за одну операцию
+// // console.log(users); //  ["добавленое ранее имя", "Poly", "Ajax", "имя 1", "имя 2"]
+
+// //  доп задание 3
+/*
+  Попросить пользователя ввести произвольную строку
+  и записать ее в переменную string
+
+  PS: для перебора массива используте цикл for или for...of
+*/
+
+//
+// let string = prompt("input string");
+// let arr;
+//
+// // Разбить строку в массив, пусть разделителем будет пробел, и записать в переменную arr
+//
+// arr = string.split(" ");
+// console.log(arr);
+
+// // Вывести в консоли общую длину массива arr
+// console.log(arr.length);
+
+// // Используя цикл, вывести в консоль все индексы массива arr
+// let i = 0;
+// for (let num of arr){
+//   arr.indexOf(num);
+//   console.log(num);
+// }
+// console.log();
+//
+// // Используя цикл, вывести в консоль все элементы массива arr
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+//
+// console.log();
+// //
+// // Используя цикл, bывести в консоли все пары индекс:значение массива arr
+//
+// for (let input of arr)
+// console.log(` ${arr.indexOf(input)} : ${input} `);
 
 
+// //  доп задание 4
 
+/*
+  Напишите цикл, который предлагает, через prompt, ввести число больше 100.
+
+   Если посетитель ввёл другое число или нажал Cancel – попросить ввести ещё раз,
+   и так далее, пока не введет число больше 100.
+
+  Предполагается, что посетитель вводит только числа, обрабатывать невалидный ввод
+  вроде строк 'qweqwe' в этой задаче необязательно.
+
+  PS: используйте цикл do...while
+*/
+
+
+// let num;
+// do {
+//   (num = Number(prompt("Input number > 100")));
+// }
+//   while (num < 100 && num !==0);
+
+
+// //  доп задание 5
+/*
+  Напишите скрипт, который выводит через console.log все
+  числа от min до max, с двумя исключениями:
+
+    - Для чисел, нацело делящихся на 3, вместо числа выводится строка 'Fizz'
+
+    - Для чисел, нацело делящихся на 5, но не на 3, вместо числа выводится строка 'Buzz'
+
+  PS: используйте цикл for
+*/
+
+// const min = 1;
+// // const max = 100;
+// //  for (let i = min; i < max; i++) {
+// //    if (i % 3 === 0) {
+// //      console.log("Fizz");
+// //    } else if (i % 3 === 0 && i % 3!==0)  {
+// //      console.log("Buzz")
+// //    } else {
+// //      console.log(i)
+// //    }
+// //  }
+
+// // //  доп задание 6
+// /*
+//   Напишите скрипт, который выбирает из массива numbers
+//   все числа, которые больше чем значение переменной num,
+//   записывая эти числа в массив newArray.
+//
+//   В результате в массиве newArray будут все подходяшие числа.
+//
+//   PS: используйте цикл for или for...of и оператор ветвления if
+// */
+//
+// const numbers = [1, 3, 17, 5, 9, 14, 8, 14, 34, 18, 26];
+// const num = 10;
+// const newArray = [];
+//
+//
+// for (let input of numbers){
+//   if (input > num) {
+//     newArray.push(input);
+//   }
+// }
+// console.log(newArray);
+
+// //  доп задание 7
+
+/*
+  Напишите скрипт, который проверяет произвольную строку
+  в переменной string и находит в ней самое длинное слово,
+  записывая его в переменную longestWord.
+*/
+
+// const string = "May the force be with you";
+// let longestWord;
+// let arr = string.split(' ');
+// console.log(arr)
+//
+// let i = 0
+// for(let input of arr) {
+//   if( i < input.length) {
+//     i = i + input.length
+//     longestWord = input;
+//   }
+// }
+//
+// console.log(longestWord); // 'force'
+
+
+// //  доп задание 8
+// /*
+//   Напишите скрипт который:
+//
+//   - Запрашивает по очереди числа при помощи prompt и сохраняет их в массиве.
+//     Используйте do...while.
+//   - Проверять что пользователь ввел не число не обязательно
+//   - Заканчивает запрашивать числа как только пользователь нажмёт Cancel.
+//   - После того как ввод был завершен, если массив не пустой,
+//     скрипт выводит сумму всех значений массива: "Сумма: <сумма всех значений в массиве>"
+//     Используйте цикл for...of
+// */
+//
+// let enterNumber;
+// let arr = [];
+//
+// do {
+//   enterNumber = prompt("vvedite chislo");
+//   if (enterNumber !== null) {
+//     arr.push(Number(enterNumber));
+//     console.log(arr);
+//   }
+// } while (enterNumber !== null);
+//
+// let summ = 0;
+// if (arr.length > 0) {
+//   for (let input of arr) {
+//     summ = summ + input;
+//   }
+//   console.log(`'summa vseh chisel:' ${summ}`);
+// }
 
 
 
