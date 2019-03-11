@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c1ef0-aefd-47ff-8ba2-f4f63247c2e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d05/js/d05.js" beforeDir="false" afterPath="$PROJECT_DIR$/d05/js/d05.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d1/js/d01.js" beforeDir="false" afterPath="$PROJECT_DIR$/d1/js/d01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d2/js/d2.js" beforeDir="false" afterPath="$PROJECT_DIR$/d2/js/d2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3/js/d3.js" beforeDir="false" afterPath="$PROJECT_DIR$/d3/js/d3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw4/js/hw4.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/js/hw4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/the_basics/js/basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/the_basics/js/basic.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw6/js/hw6.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
+            <state relative-caret-position="384">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -72,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw4/js/hw4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-977">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="-1377">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -270,12 +265,12 @@
       <workItem from="1550688123560" duration="75079000" />
       <workItem from="1550937205370" duration="135807000" />
       <workItem from="1551368019732" duration="2638000" />
-      <workItem from="1551380761969" duration="157411000" />
+      <workItem from="1551380761969" duration="159288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370935000" />
+    <option name="totallyTimeSpent" value="372812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -462,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw4/js/hw4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-977">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="-1377">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -490,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw6/js/hw6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
+        <state relative-caret-position="384">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
