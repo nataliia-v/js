@@ -616,4 +616,351 @@
 //   // console.log('obj[prop]')
 //   props = obj[prop];
 // }
-alert( +"Infinity" )
+// alert( +"Infinity" )
+
+// let a;
+// console.log(typeof a);
+//
+// a = null;
+// console.log(typeof a);
+//
+// a = true;
+// console.log(typeof a);
+
+// const name = "Masha";
+
+// console.log("My name is ", name);
+// console.log(name + ',',"give me my spoon");
+
+
+/*
+ * - Объяви две переменные хранящие информацию о товаре: name и price
+ * - Присвой переменным следующие характеристики товара (сразу при объявлении)
+ *   - название: Генератор защитного поля
+ *   - цена: 1000
+ * - Присвой товару новую цену - 2000
+ * - Используя шаблонную строку выведи в консоли информацию о товаре,
+ *   получится "Выбран «Генератор защитного поля», цена за штуку 2000 кредитов"
+ */
+
+// let name = "название: Генератор защитного поля";
+// let price = '1000';
+// price = '2000';
+//
+// console.log(`${name}, ${price}`);
+
+// let clients = ["Mango", "Poly", "Ajax"];
+//
+// clients[2] = 'Chelsy';
+// console.log(clients.length);
+
+// const message = "Welcome to Bahamas!";
+// const clients = ["Mango", "Poly", "Ajax"];
+// //
+// // console.log(message.split(' '));
+// //
+// // console.log(clients.join(','));
+//
+//
+// console.log(clients.indexOf('Ajax'));
+//
+//
+//
+
+
+
+/*
+  Напиши цикл, который просит, через prompt, ввести число больше 100. 
+  
+  Если посетитель нажал Cancel - завершить цикл.
+  
+  Если посетитель ввёл другое число – попросить ввести ещё раз, 
+  и так далее, пока не введет число больше 100.
+  
+  Предполагается, что посетитель вводит только числа, 
+  обрабатывать невалидный ввод вроде строк 'qwerty' не нужно.
+  
+  PS: используй бесконечный цикл с прерыванием
+*/
+
+
+// let min = 100;
+// let input ;
+//
+//
+// while (input !== null) {
+//   input = prompt(`input number > ${min}`)
+// }
+//
+// while (input < 100) {
+//   alert('input again');
+// }
+//
+// const numbers = [2,3,4,2,11,55];
+// let start = 0;
+//
+// while(start < numbers.length){
+//   console.log(numbers[start]);
+// start = start + 1;
+// }
+
+
+///Задача 1 Повторите поведение кнопки по нажатию на нее:
+// let btn = document.querySelector('button');
+//
+// btnClick = () => alert('Hello');
+//
+// btn.addEventListener('click', btnClick);
+
+// ///Задача2. Повторите поведение кнопки по нажатию на нее (она меняет текст в инпуте):
+// let btn = document.querySelector('button');
+// let inpCl = document.querySelector('#input');
+//
+// btnInp = () => {
+//   inpCl.value = "!!!";
+// };
+//
+// btn.addEventListener('click', btnInp);
+
+// Задача 3. Повторите поведение кнопки по нажатию на нее
+// (она выводит алертом содержимое инпута):
+
+// let btn = document.querySelector('button');
+// let inpCl = document.querySelector('#input');
+//
+// fnkBtn = () => alert(inpCl.value);
+//
+// btn.addEventListener('click',fnkBtn );
+
+
+// Задача 4 Повторите поведение кнопки по нажатию на нее
+// (она выводит алертом содержимое инпута, возведенное в квадрат)
+
+// let btn = document.querySelector('button');
+// let inpCl = document.querySelector('#input');
+//
+// btnFnk = () => alert(inpCl.value * inpCl.value );
+// btn.addEventListener('click', btnFnk);
+
+// Задача 5  Повторите поведение кнопки по нажатию на нее
+// (она осуществляет обмен содержимым между двумя инпутами,
+// можете понажимать на нее несколько раз или вручную сменить содержимое инпутов):
+
+// let btn = document.querySelector('button');
+// let inpCl1 = document.querySelector('#input1');
+// let inpCl2 = document.querySelector('#input2');
+//
+//
+//
+// btnFnk = () => {
+//   let box = inpCl1.value;
+//   inpCl1.value = inpCl2.value;
+//   inpCl2.value = box;
+// };
+//
+// btn.addEventListener('click', btnFnk);
+//
+// let hiddenText = document.querySelector('#text');
+// hiddenText.hidden = true;//текст стал невидимым
+//
+// let imageTest = document.querySelector('.image');
+//
+// imageTest.src = 'https://parismatch.be/app/uploads/2018/04/Macaca_nigra_self-portrait_large-e1524567086123-1100x715.jpg';
+// imageTest.style.width = '500px';
+//
+// setTimeout( ()=> {
+//   imageTest.src = 'https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FTEL.2Enews.2F2018.2F01.2F12.2F8258058f-adc2-432f-98cb-475b9dad5933.2Ejpeg/1150x495/crop-from/top/le-selfie-d-un-singe-fait-polemique-sur-le-droit-d-auteur.jpg'
+// },2000);
+
+// let root = document.querySelector('#root');
+//
+// let btn = document.createElement('button');
+// btn.textContent = 'click me!!';
+// btn.classList.add('btn');
+//
+
+// function createButton ({text = "button", className = ""}){
+//   const btn = document.createElement('button');
+//   btn.textContent = text;
+//   btn.classList.add(className);
+//   return btn
+// }
+//
+// let vvv =  createButton({
+//   text: 'click this btn',
+//   className: 'bigBtn',
+// });
+// root.appendChild(vvv);
+
+
+
+///доп 2 мод 7
+/*
+  Дан список с классом .list
+	- Найдите первого потомка списка и сделайте его текст красного цвета
+	- Найдите последнего потомка списка и сделайте его текст синего цвета
+*/
+
+// const list = document.querySelector('.list');
+//
+// const htmlitem = list.firstElementChild;
+// htmlitem.style.color = 'red';
+//
+// const lastChild = list.lastElementChild;
+// lastChild.style.color = 'blue';
+
+///доп 1 мод 7
+
+/*
+  Есть список категорий с классом categories (на вкладке HTML).
+
+  Напишите код, который для каждого элемента li (первая вложенность)
+  в списке categories выведет в консоль:
+  - Текст непосредственно в нём (название категории)
+  - Количество всех вложенных в него элементов li
+
+  К примеру:
+    Категория: Животные
+    Количество вложенных li: 4
+*/
+
+// const categories = document.querySelector('.categories');
+//
+// const children = Array.from(categories.children);
+// console.log(children);
+//
+// children.forEach(x => {
+//   console.log('Категория:' + x.childNodes[0].textContent);
+//   console.log(' Количество вложенных li ' +  x.childNodes[1].childElementCount);
+// });
+
+///доп 3 мод 7
+
+/*
+  Дан ul склассом .list и массив строк.
+
+  Вставьте элементы этого массива в ul так, чтобы каждый элемент стоял в своем li.
+*/
+
+// const elements = ['HTML', 'CSS', 'JavaScript', 'React', 'Node'];
+//
+// const list = document.querySelector('.list');
+//
+// const createElement = ({text = 'text'}) => {
+//   const elem = document.createElement('li');
+//   elem.textContent = text;
+//   list.appendChild(elem);
+// };
+//
+// elements.forEach(el => {
+//   createElement({text : el})
+// });
+
+
+///доп 4 мод 7
+/*
+  Напишите скрипт для создания галлереи изображений.
+
+  - На вкладке HTML уже есть ul.gallery.
+  - Используйте массив объектов для создания тегов img вложенных в li
+  - Оформление по вкусу, можно и не делать, достаточно чтобы каждое
+    изображение было 300px по ширине
+  - Добавьте все элементы галлереи в ul.gallery
+*/
+
+// const galleryItems = [
+//   {
+//     url:
+//       "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "White and Black Long Fur Cat"
+//   },
+//   {
+//     url:
+//       "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Orange and White Koi Fish Near Yellow Koi Fish"
+//   },
+//   {
+//     url:
+//       "https://images.pexels.com/photos/1216482/pexels-photo-1216482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Two Brown Hen and One Red Rooster"
+//   },
+//   {
+//     url:
+//       "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Group of Horses Running"
+//   },
+//   {
+//     url:
+//       "https://images.pexels.com/photos/1316294/pexels-photo-1316294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "Macaw Birds"
+//   },
+//   {
+//     url:
+//       "https://images.pexels.com/photos/41178/africa-animal-big-carnivore-41178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+//     alt: "2 Lion on Grass Field during Daytime"
+//   }
+// ];
+//
+//
+// let gallery = document.querySelector('.gallery');
+//
+// let createGallery = () => {
+//
+//   galleryItems.forEach(el => {
+//     let liItem = document.createElement('li');
+//     let imgItem = document.createElement('img');
+//     imgItem.src = el.url;
+//     imgItem.alt = el.alt;
+//     imgItem.style.width = '300px';
+//     liItem.appendChild(imgItem);
+//     gallery.appendChild(liItem);
+//   });
+// };
+//
+// createGallery();
+
+///доп 5 мод 7
+
+/*
+  Есть список с классом  из произвольного
+  количества чекбоксов, каждый из которых содержит
+  размер одежды в фильтре.
+  Напишите функцию collectInputData(inputs), которая
+  принимает 1 параметр inputs - массив тех инпутов
+  у которых состояние checked.
+  Возвращает массив значений атрибута value.
+*/
+
+
+// const sizeFilter = document.querySelector('.size-filter');
+// const input = Array.from(sizeFilter.querySelectorAll('input'));
+// console.log(input);
+// let collectInputData = (inputs) => {
+//   return inputs.filter( el => {
+//       return el.checked
+//   });
+// };
+//
+// console.log(collectInputData(input));
+
+
+
+///доп 7 мод 7
+/*
+  В HTML-документе уже есть тег с id="root" (вкладка HTML)
+
+  Создайте функцию createBoxes(num), которая принимает 1 параметр num - число.
+
+  Функция создает столько div, сколько указано в num и возвращает их в одном
+  общем контейнере. После чего необходимо повесить результат работы функции
+  в div с id="#root"
+
+  Каждый div:
+    - Имеет случайный rgb цвет фона
+    - Размеры самого первого div - 30px на 30px.
+    - Каждый следующий div после первого, должен быть шире и выше предыдущего
+      на 10px
+*/
+
+let root = document.querySelector('')
+
