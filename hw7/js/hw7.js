@@ -33,7 +33,6 @@ const posts = [
   }
 ];
 
-const cards = document.querySelector('.cards');
 
 
 let createPostCard = (post) => {
@@ -59,13 +58,15 @@ let createPostCard = (post) => {
 
 };
 
-let createCards = (posts) => {
+let createCards = (posts, containerSelector) => {
+  const cards = document.querySelector(containerSelector);
+
   posts.forEach(post => {
     cards.appendChild(createPostCard(post));
   });
 };
 
-createCards(posts);
+createCards(posts, '.cards');
 
 
 
