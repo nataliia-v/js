@@ -1,3 +1,39 @@
-.rtrttr {
-  gtt: gt;
-};
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 1300px;
+}
+
+.image-gallery {
+  max-width: 1240px;
+}
+
+.previewElements{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1250px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li img {
+  width: 320px;
+  height: 213px;
+}
+
+.fullviewImg {
+  max-width: 1000px;
+
+}
+
+.fullviewEl {
+  margin: auto;
+  text-align: center;
+}

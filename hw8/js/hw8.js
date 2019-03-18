@@ -107,8 +107,6 @@ preview.addEventListener('click', event => {
   if (nodeName !== 'IMG') return;
   const fullviewSrc = event.target.getAttribute('data-fullview');
   fullview.src = fullviewSrc;
-
-
 });
 
 
