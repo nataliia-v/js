@@ -423,6 +423,181 @@
   // pole.addEventListener('focus', blurAlert);
 
 
+// const singleBtn = document.querySelector('#single');
+//
+// const handleClick = () => alert('CLICK!!!');
+// singleBtn.addEventListener('click', handleClick);
+//
+//
+// const multiBtn = document.querySelector('#multiple');
+//
+// const firstCallback = () => alert('FIRST CALLBACK');
+// const secondCallback = () => alert('SECOND CALLBACK');
+// const thirdCallback = () => alert('THIRD CALLBACK');
+//
+// multiBtn.addEventListener('click', firstCallback);
+// multiBtn.addEventListener('click', secondCallback);
+// multiBtn.addEventListener('click', thirdCallback);
+
+
+// const addBtn = document.querySelector('button[data-action = "add"]');
+// const removeBtn = document.querySelector('button[data-action = "remove"]');
+// const btn = document.querySelector('#btn');
+//
+// const handleClick = () => alert('CLICK EVENT LISTENER ALERT');
+//
+//  addBtn.addEventListener('click', () => {
+//    btn.addEventListener('click', handleClick);
+//  });
+//
+//  removeBtn.addEventListener('click', () => {
+//    btn.removeEventListener('click', handleClick);
+//  });
+//
+// const user = {
+//   name: 'Mango',
+//   showName() {
+//     console.log(this);
+//     // this будет ссылаться на button
+//     // если использовать showName как callback
+//      alert(`My name is: ${this.name}`);
+//     // тут undefined так как поля name нету у button
+//   }
+// };
+//
+// // Представим что у нас есть кнопка с классом js-btn
+// // Выберем ее и повесим на нее слушатель клика
+// const btn = document.querySelector('.js-btn');
+//
+// user.showName(); //работает
+// // btn.addEventListener('click', user.showName); // не работает
+// btn.addEventListener('click', user.showName.bind(user)); // работа
+//
+
+
+// доп 1 мод 8
+  /*
+  Напишите скрипт который реализует следующий функционал.
+
+  Есть кнопка с классом button, текст которой отображает
+  кол-во раз которое по ней кликнули, обновляется при каждом клике.
+*/
+
+  // let btn = document.querySelector('button');
+  //
+  // let clicks = () => {
+  //   btn.textContent = Number(btn.textContent) + 1;
+  // };
+  //
+  // btn.addEventListener('click', clicks);
+
+
+
+  // доп 2 мод 8
+
+  /*
+    Даны 2 инпута, абзац и кнопка. По нажатию на кнопку
+    получите числа которые бьудут введены в инпуты и запишите их сумму в span.result.
+  */
+
+  // let inp1 = document.querySelector('.inp1');
+  // let inp2 = document.querySelector('.inp2');
+  // let result = document.querySelector('.result');
+  // let btn = document.querySelector('button[data-action="add"]');
+  //
+  // let calculator = () => {
+  //   let sum = Number(inp1.value) + Number(inp2.value);
+  //   result.textContent = sum;
+  // };
+  //
+  // btn.addEventListener('click', calculator);
+
+
+  // доп 3 мод 8
+
+  /*
+  Есть счетчик (спан) и кнопки +1, -1, которые должны увеличивать и уменьшать значение счетчика на 1.
+
+  - Создайте класс Counter, который хранит одно поле value - текущее значение счетчика
+  - Класс принимает один параметр - onChange, функцию для обновления интерфейса при изменении счетчика
+  - Добавьте классу методы increment и decrement для увеличения и ументшение значения счетчика
+  - Привяжите вызовы методов и значение счетчика к раметке
+*/
+
+  // class Counter {
+  //
+  //   constructor(onChange) {
+  //     this.onChange = onChange;
+  //     this.value = 0;
+  //   }
+  //
+  //   increment () {
+  //     this.value += 1;
+  //     this.onChange(this.value);
+  //   }
+  //
+  //   decrement () {
+  //     this.value -= 1;
+  //     this.onChange(this.value);
+  //   }
+  // }
+  //
+  // let btnMinus = document.querySelector('[data-action="sub"]');
+  // let btnPlus = document.querySelector('[data-action="add"]');
+  // let spanValue = document.querySelector('.value');
+  //
+  //
+  // const onCounterChange = (value) => {
+  //   spanValue.textContent = value;
+  // };
+  //
+  // const counter = new Counter(onCounterChange);
+  //
+  // btnMinus.addEventListener('click', () => {
+  //   counter.decrement();
+  // });
+  // btnPlus.addEventListener('click', () => {
+  //   counter.increment();
+  // });
+
+
+  // доп 4 мод 8
+  /*
+    Есть форма с набором радиокнопок. Пользователь выбирает вариант ответа,
+    после чего нажимает кнопку "Submit" и происходит отправка формы.
+
+    При отправке формы:
+      - не должна перезагружаться страница
+      - необходимо получить выбранную опцию и вывести в параграф с классом .result
+  */
+
+//   let options = document.querySelector('.options');
+//   let btn = document.querySelector('.btn');
+//   let result = document.querySelector('.result');
+//
+//
+//   options.addEventListener('click', onOptionClick);
+//
+//   function onOptionClick(event) {
+//     const target = event.target;
+//     const nodeName = target.nodeName;
+//
+//     if (nodeName !== 'INPUT') return target.textContent ;
+//
+//   }
+//
+//   let fnkResult = () => {
+//
+//
+//   };
+//
+// btn.addEventListener('click', fnkResult);
+
+
+  // доп 5 мод 8
+
+
+
 
 
 
