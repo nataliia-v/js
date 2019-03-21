@@ -401,8 +401,6 @@
 
 
 
-
-
 // function createPostCard(post) {
 //   return `
 //   <div class="movie">
@@ -429,3 +427,198 @@
 // }
 //
 // renderCards(postsdata);
+
+
+// доп 1 модуль 9
+
+/*
+ * Есть массив цветов в hex-формате и кнопки Start и Stop.
+ *
+ * Напиши скрипт, который после нажатия кнопки Start, раз в секунду
+ * меняет цвет фона body на случайное значение из массива. Используй
+ * инлайн-стиль для изменения background-color.
+ *
+ * При нажатии на кнопку Stop, изменении цвета фона должно останавливаться.
+ *
+ * Учти, что на кнопку Start можно нажать бесконечное количество раз.
+ * Сделай так, чтобы пока изменение темы запушено, кнопка Start была не активна.
+*/
+
+// const colors = [
+//   "#FFFFFF",
+//   "#2196F3",
+//   "#4CAF50",
+//   "#FF9800",
+//   "#009688",
+//   "#795548"
+// ];
+// const start = document.querySelector('[data-action="start"]');
+// const stop = document.querySelector('[data-action="stop"]');
+// const body = document.querySelector('body');
+// start.addEventListener('click', changColor);
+// stop.addEventListener('click', stopColor);
+// let inter;
+//
+// function changColor(){
+//   inter = setInterval(() => {
+//     let rand = Math.floor(Math.random() * colors.length);
+//     body.style.backgroundColor = colors[rand];
+//     console.log(rand);
+//   }, 1000);
+//   start.disabled = true;
+//
+// };
+//
+// function stopColor(){
+//   clearInterval(inter);
+//   start.disabled = false;
+// }
+
+
+// доп 2 модуль 9
+
+/*
+  Напишите функцию getFormattedTime(time), которая
+  получает time - кол-во миллисекунд и возвращает
+  строку времени в формате xx:xx.x, 01:23.6, минуты:секунды.миллисекунды.
+
+  Используйте возможности объекта Date для работы со временем.
+
+  Из миллисекунд нам интересен только разряд с сотнями,
+  то есть если сейчас 831мс то нам интересна исключительно цифра 8.
+*/
+
+// function getFormattedTime(time) {
+//   let date = new Date (time)
+//   let minutes = date.getMinutes();
+//   let seconds = date.getSeconds();
+//   if(seconds < 10){
+//     seconds = '0' + seconds;
+//   }
+//   let milisec = parseInt((date.getMilliseconds()) / 100);
+//
+//   return `${minutes} : ${seconds}. ${milisec}`;
+// }
+// console.log(getFormattedTime(Date.now()))
+// console.log(
+//   getFormattedTime(1523621052858)
+// ); // 04:12.8
+//
+// console.log(
+//   getFormattedTime(1523621161159)
+// ); // 06:01.1
+//
+// console.log(
+//   getFormattedTime(1523621244239)
+// ); // 07:24.2
+
+
+// доп 3 модуль 9
+/*
+  Напишите скрипт, реализующий базовый функционал
+  таймера, запуск отсчета времени и сброс счетчика
+  в исходное состояние.
+
+  Используйте возможности объекта Date для работы со временем.
+
+  Создайте функцию startTimer, которая будет запускать
+  отсчет времени с момента ее нажатия, она вызывается
+  при клике на кнопку с классом js-timer-start.
+
+  Создайте функцию stopTimer, которая будет останавливать
+  счетчик, она вызывается при клике на кнопку с классом js-timer-stop.
+
+  Используйте вспомогательную функцию updateClockface
+  которая обновляет значение счетчика в интерфейсе.
+  Для составления строки времени в формате xx:xx.x,
+  исользуйте функцию getFormattedTime из задания номер 3.
+
+  Подсказка: так как нам интересны исключительно сотни миллисекунд,
+      нет смысла выполнять пересчет времени чаще чем каждые 100мс.
+*/
+
+// const clockface = document.querySelector(".js-clockface");
+// const startBtn = document.querySelector(".js-timer-start");
+// const stopBtn = document.querySelector(".js-timer-stop");
+//
+// const timer = {
+//   startTime: null,
+//   deltaTime: null,
+//   id: null
+// };
+//
+// function getFormattedTime(time) {
+//   let myDate = new Date(time);
+//   let minutes = myDate.getMinutes();
+//   let second = Math.abs(Math.floor(myDate.getSeconds()));
+//   let millisecond = Math.abs(Math.floor(myDate.getMilliseconds() / 100) % 60);
+//   if (second.toString().length == 1) second = '0' + second;
+//   if (minutes.toString().length == 1) minutes = '0' + minutes;
+//
+//   return `${minutes}:${second}.${millisecond}`;
+// }
+//
+// function updateClockface(elem, time) {
+//   // Используйте функцию getFormattedTime из задания #2
+//   elem.textContent = getFormattedTime(time);
+// }
+//
+// function startTimer() {
+//   timer.startTime = Date.now();
+//
+//   if (timer.id != null) {
+//     clearInterval(timer.id);
+//   }
+//
+//   timer.id = setInterval(function () {
+//     timer.deltaTime = (Date.now() - timer.startTime);
+//     updateClockface(clockface, timer.deltaTime);
+//   }, 100);
+//
+// }
+//
+// stopBtn.addEventListener('click', function () {
+//   console.log("clear called");
+//   clearInterval(timer.id);
+// });
+//
+// startBtn.addEventListener('click', startTimer);
+//
+// /*
+//  * Подсветка активной кнопки
+//  */
+// function setActiveBtn(target) {
+//   if (target.classList.contains('active')) {
+//     return;
+//   }
+//
+//   startBtn.classList.remove('active');
+//   stopBtn.classList.remove('active');
+//
+//   target.classList.add('active');
+// }
+
+
+
+const promise = new Promise((onResolve, onReject) => {
+  setTimeout(() =>{
+    onResolve('returned text,resolved value');
+    onReject('returned text,resolved value');
+  }, 1000);
+
+});
+
+promise.then(
+  value => console.log(value),
+  err => console.error(err)
+);
+
+
+
+
+
+
+
+
+
+

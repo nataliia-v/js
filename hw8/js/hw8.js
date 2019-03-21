@@ -47,10 +47,6 @@
       Подберите изображения одинаковых пропорций.
 */
 
-/*
-  Массив объектов с данными для создания компонента выглядит следующим образом.
-  Замените пути на соотвествующие вашим, или назовите изображения аналогично.
-*/
 
 const galleryItems = [
   { preview: 'img/preview-1.jpg', fullview: 'img/fullview-1.jpg', alt: "alt text 1" },
@@ -76,8 +72,6 @@ let createFullview = () => {
 };
 
 createFullview();
-
-
 
 let createPreview = () => {
 
@@ -108,12 +102,5 @@ preview.addEventListener('click', event => {
   const fullviewSrc = event.target.getAttribute('data-fullview');
   fullview.src = fullviewSrc;
 });
-
-
-
-
-
-
-
 
 

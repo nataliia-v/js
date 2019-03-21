@@ -313,7 +313,7 @@
  * Учти, что на кнопку Start можно нажать бесконечное количество раз.
  * Сделай так, чтобы пока изменение темы запушено, кнопка Start была не активна.
 */
-//
+
 //   const colors = [
 //     "#FFFFFF",
 //     "#2196F3",
@@ -524,7 +524,7 @@
   - Привяжите вызовы методов и значение счетчика к раметке
 */
 
-  // class Counter {
+  // class Counter {  /////вариант 1
   //
   //   constructor(onChange) {
   //     this.onChange = onChange;
@@ -560,6 +560,33 @@
   //   counter.increment();
   // });
 
+//   class Counter {  /////вариант 2
+//
+//     constructor(onChange) {
+//       this.onChange = onChange;
+//       this.value = 0;
+//     }
+//
+//     get increment () {
+//       this.onChange(this.value+=1);
+//     }
+
+//     get decrement () {
+//       this.onChange(this.value-=1);
+//     }
+//   }
+//
+// const value = document.querySelector(".value");
+//
+//   const counter = new Counter((res) => value.innerHTML = res);
+//
+//   const onClickHandler = ({target}) => target.dataset.action === 'add'? counter.increment : counter.decrement;
+//   const minus= document.querySelector('button[data-action="sub"]');
+//   const plus = document.querySelector('button[data-action="add"]');
+//
+//   plus.addEventListener('click', onClickHandler);
+//   minus.addEventListener('click', onClickHandler);
+
 
   // доп 4 мод 8
   /*
@@ -571,32 +598,202 @@
       - необходимо получить выбранную опцию и вывести в параграф с классом .result
   */
 
-//   let options = document.querySelector('.options');
-//   let btn = document.querySelector('.btn');
-//   let result = document.querySelector('.result');
-//
-//
-//   options.addEventListener('click', onOptionClick);
-//
-//   function onOptionClick(event) {
-//     const target = event.target;
-//     const nodeName = target.nodeName;
-//
-//     if (nodeName !== 'INPUT') return target.textContent ;
-//
-//   }
-//
-//   let fnkResult = () => {
-//
-//
-//   };
-//
-// btn.addEventListener('click', fnkResult);
+  // const form = document.querySelector('.question-form');
+  // const chkd = document.querySelectorAll('input');
+  // const result = document.querySelector('.result');
+  //
+  // form.addEventListener('submit', show );
+  //
+  // function show(e) {
+  //   e.preventDefault();
+  //   Array.from(chkd).find(i => i.checked === true ? result.innerHTML = ` Result:${i.parentElement.textContent};` : null);
+  // }
+
+
 
 
   // доп 5 мод 8
+  /*
+  Дан список изображений. Сделайте так, чтобы по клику на картинку
+  алертом выводился ее src. Обязательно используйте делегирование событий.
+*/
+
+// let gallery = document.querySelector('.images');
+//
+// let imgSrc = (event) => {
+//   console.log(event);
+//   const nodeName = event.target.nodeName;
+//   if (nodeName !== "IMG") return;
+//
+//   alert(event.target.src)
+// };
+//   gallery.addEventListener('click', imgSrc );
 
 
+  // const images = document.querySelector('.images');////вариант 2
+  // images.addEventListener('click', ({target})=> target.nodeName === "IMG"? alert(target.src):null);
+
+
+  // доп 6 мод 8
+  /*
+    Дан ul, а внутри него произвольное количество li с текстом и кнопкой.
+    Сделайте так, чтобы по нажатию на кнопку, удалялся тот li в котором
+    она находится. Обязательно используйте делегирование событий.
+  */
+
+// const list = document.querySelector('.list');
+
+
+// let deleteEl = (event) => {
+//   const nodeName = event.target.nodeName;//// узнает тег элемента большими буквами
+//
+//   if (nodeName !== "BUTTON") return;
+//   event.target.parentElement.remove();
+// };
+
+
+  // let deleteEl = (event) => {   //////// мое решение, которое удаляет элементы в блоках
+  //   const nodeName = event.target.nodeName;
+  //
+  //   if (nodeName === "LI" || nodeName === "UL" ) return;
+  //
+  //   event.target.remove();
+  // };
+
+
+// list.addEventListener('click', deleteEl);
+
+
+
+  // доп 7 мод 8
+
+  /*
+  Дан набор инпутов. Сделайте так, чтобы при потере фокуса все
+  инпуты проверяли свое содержимое на правильное количество символов.
+
+  - Сколько символов должно быть в инпуте, указывается в атрибуте data-length.
+  - Если введено подходящее количество, то outline инпута становится зеленым,
+    если неправильное - красным. Для добавления стилей, на вкладке CSS есть стили valid и invalid
+*/
+
+  // const inputList = document.querySelector('.input-list');
+  // const inputs = document.querySelectorAll('input');
+  //
+  // let inputType = () => {
+  //
+  //   inputs.forEach(el => {
+  //     if(el.value.length > 0){
+  //       if (Number(el.dataset.length) === el.value.length){
+  //         el.classList.add('valid');
+  //       }else
+  //         el.classList.add('invalid');}
+  //     })
+  // };
+  //
+  // inputList.addEventListener('focusout', inputType);
+
+
+
+  // const inputs = document.querySelectorAll('.input');/// вариант Саши
+  //
+  // inputs.forEach(inp => inp.addEventListener('blur', validator));
+  //
+  // function validator(e) {
+  //   const dataLength = Number(e.target.getAttribute('data-length'));
+  //   const inputLength = e.target.value && e.target.value.length;
+  //
+  //   ['invalid', 'valid'].forEach(className => e.target.classList.remove(className));
+  //
+  //   if (inputLength) {
+  //     if (inputLength === dataLength) {
+  //       e.target.classList.add('valid');
+  //     } else {
+  //       e.target.classList.add('invalid');
+  //     }
+  //   }
+  // }
+
+  // доп 8 мод 8
+  /*
+    Напишите скрипт который:
+
+      - При фокусе текстового поля, в p.message рендерит строку "Input is in focus!"
+      - При наборе текста в инпуте (событие input), текущее его значение должно
+        отображаться в p.input-value
+  */
+//   let message = document.querySelector('.message');
+//   let inpt = document.querySelector('.input');
+//   let inpValue = document.querySelector('.input-value');
+//
+//   let render = () =>{
+//     message.textContent = "Input is in focus!";
+//   };
+// function textInput (){
+//    inpValue.textContent = "Current input value: " + inpt.value;
+// }
+//
+//   inpt.addEventListener('focus', render);
+//   inpt.addEventListener('input', textInput);
+
+  // доп 9 мод 8
+
+  /*
+  На вкладках HTML и CSS уже готовая верстка модального окна.
+  По умолчанию модальное окно скрыто классом modal-hidden.
+
+  Напишите скрипт который реализует следующее поведение:
+
+  - При клике на кнопке с надписью "Open Modal", модальное окно с классом modal,
+    должно появляться. Для этого необходимо убрать класс modal-hidden.
+    Для выбора модального модального окна используйте класс js-modal-backdrop
+
+  - При открытом модальном окне, клик на кнопку с крестиком (data-action="close-modal")
+    или на серый фон с прозрачностью (js-modal-backdrop), модальное окно должно закрываться.
+*/
+  // let openModal = document.querySelector('.btn');
+  // let modal = document.querySelector('.js-modal-backdrop');
+  //
+  // let clouse = document.querySelector('[data-action="close-modal"]');
+  //
+  // modal.addEventListener('click', clous);
+  // openModal.addEventListener('click', open);
+  //
+  // function open (){
+  //   modal.classList.remove('modal-hidden');
+  // }
+  //
+  // function clous (event){
+  //   if(event.target === clouse || event.target === modal){
+  //     modal.classList.add('modal-hidden')
+  //   }
+  // }
+
+  // доп 10 мод 8
+  /*
+  Ознакомьтесь с HTML и CSS.
+
+  Есть меню навигации, необходимо написать скрипт, который
+  при клике на пункт меню добавит ему класс active,
+  таким образом выделив текущую (активную) ссылку,
+  при этом убрав его у всех остальных элементов меню.
+
+  Пунктов меню может быть произвольное количество, используйте
+  прием делегирование событий. Учтите клик по самому ul, его
+  необходимо игнорировать.
+
+  При клике по ссылкам не должна перезагружаться страница!
+*/
+
+  let menu = document.querySelector('.js-menu');
+
+function activeLink (event){
+
+let active = document.querySelector('.active');
+active.classList.toggle('active');
+event.target.classList.add('active');
+  }
+
+  menu.addEventListener('click', activeLink );
 
 
 
