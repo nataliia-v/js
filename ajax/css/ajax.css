@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+
+/*наша погода */
+
+
+/*body {*/
+  /*height: 100vh;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*flex-direction: column;*/
+  /*color: #fff;*/
+  /*align-items: center;*/
+  /*background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));*/
+/*}*/
+
+
+/*.location {*/
+  /*height: 30vh;*/
+  /*width: 50%;*/
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*align-items: center;*/
+/*}*/
+
+/*.temperature {*/
+  /*flex-direction: column;*/
+/*}*/
+
+/*.temperature-degree, .temperature-description {*/
+  /*cursor: pointer;*/
+  /*font-size: 40px;*/
+/*}*/
+
+/*.temperature-degree span{*/
+  /*margin: 10px;*/
+  /*font-size: 30px;*/
+/*}*/
+
+
+/*// доп 1 модуль 10*/
+/*body {*/
+  /*font-family: "Roboto", sans-serif;*/
+  /*background: #fff;*/
+/*}*/
+
+/*.container {*/
+  /*padding-top: 20px;*/
+  /*width: 400px;*/
+  /*min-width: 480px;*/
+  /*margin: auto;*/
+/*}*/
+
+/*.mdc-btn {*/
+  /*min-width: 88px;*/
+  /*height: 36px;*/
+  /*padding: 0 16px;*/
+  /*border: 0;*/
+  /*outline: 0;*/
+  /*border-radius: 2px;*/
+  /*color: #fff;*/
+  /*font-size: 14px;*/
+  /*text-transform: uppercase;*/
+  /*font-weight: 600;*/
+  /*background-color: #00796b;*/
+  /*cursor: pointer;*/
+  /*box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);*/
+/*&:hover {*/
+   /*background-color: #004c40;*/
+ /*}*/
+/*&:active {*/
+   /*box-shadow: 0 6px 4px 0 rgba(#414141, 0.3);*/
+ /*}*/
+/*}*/
+
+/*.search-form {*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*padding: 20px;*/
+  /*box-shadow: 0 0 2px 2px rgba(#414141, 0.2);*/
+/*}*/
+
+/*.search-form input {*/
+  /*margin-right: 12px;*/
+  /*padding: 4px;*/
+  /*outline: 0;*/
+  /*border: 0;*/
+  /*color: #263238;*/
+  /*font-size: 18px;*/
+  /*background-color: transparent;*/
+  /*border-bottom: 2px solid #00796b;*/
+/*&::placeholder {*/
+   /*color: #616161;*/
+ /*}*/
+/*}*/
+
+
+/*// доп 2 модуль 10*/
+
+/*body {*/
+  /*font-family: "Roboto", sans-serif;*/
+  /*background: #fff;*/
+/*}*/
+
+/*.container {*/
+  /*padding-top: 20px;*/
+  /*width: 400px;*/
+  /*min-width: 480px;*/
+  /*margin: auto;*/
+/*}*/
+
+/*.mdc-btn {*/
+  /*min-width: 88px;*/
+  /*height: 36px;*/
+  /*padding: 0 16px;*/
+  /*border: 0;*/
+  /*outline: 0;*/
+  /*border-radius: 2px;*/
+  /*color: #fff;*/
+  /*font-size: 14px;*/
+  /*text-transform: uppercase;*/
+  /*font-weight: 600;*/
+  /*background-color: #00796b;*/
+  /*cursor: pointer;*/
+  /*box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);*/
+/*&:hover {*/
+   /*background-color: #004c40;*/
+ /*}*/
+/*&:active {*/
+   /*box-shadow: 0 6px 4px 0 rgba(#414141, 0.3);*/
+ /*}*/
+/*}*/
+
+/*.search-form {*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*padding: 20px;*/
+  /*box-shadow: 0 0 2px 2px rgba(#414141, 0.2);*/
+/*}*/
+
+/*.search-form input {*/
+  /*margin-right: 12px;*/
+  /*padding: 4px;*/
+  /*outline: 0;*/
+  /*border: 0;*/
+  /*color: #263238;*/
+  /*font-size: 18px;*/
+  /*background-color: transparent;*/
+  /*border-bottom: 2px solid #00796b;*/
+/*&::placeholder {*/
+   /*color: #616161;*/
+ /*}*/
+/*}*/
+
+/*// доп 3 модуль 10*/
+
+
+
+
+
