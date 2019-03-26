@@ -1,0 +1,13 @@
+{
+  "name": "Green",
+  "version": "1.0.0",
+  "description": "development of Cheburator",
+  "main": "gulp.js",
+  "scripts": {
+    "start": "node gulp.js",
+  },
+  "author": "nataliia-v",
+  "license": "ICS",
+  "dependenci"
+
+}

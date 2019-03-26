@@ -35,6 +35,7 @@ const form4 = document.querySelector(".update-form");
 let inputUpdate= document.querySelector(".inputUpdate");
 const userName1 = document.querySelector(".enterName1");
 const userAge1 = document.querySelector(".enterAge1");
+const resultUpdate = document.querySelector(".resultUpdate");
 
 
 function getAllUsers(event) {
@@ -107,9 +108,12 @@ function updateUser(event){
       "Content-type": "application/json; charset=UTF-8"
     }
   })
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw Error(response.statusText);}
+      return response.json()})
     .then(data => console.log(data))
-    .catch(error => console.log('ERROR' + error));
+    .catch(error => resultUpdate.innerHTML =  ('ERROR' + error));
 }
 
 form.addEventListener("submit", getAllUsers);
