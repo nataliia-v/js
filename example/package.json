@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "my first Gulp",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm gulp"
+  },
+  "keywords": [],
+  "author": "nataliia-v",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rigger": "^0.5.8"
+  }
+}
