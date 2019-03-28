@@ -38,8 +38,23 @@
   <button type="reset">Clear</button>
 </form>
 
+<div class="cards_container"></div>
+
+<template id="cardItem">
+  <article class="card">
+    <img src="{{img}}" alt="" class="image">
+    <h2 class="name">{{name}}</h2>
+    <p class="color">{{color}}</p>
+    <p class="descr">{{descr}}</p>
+    <p class="price">{{price}}</p>
+    <p class="release_date">release_date</p>
+  </article>
+</template>
 
 
-  <script src="js/hw11.js"></script>
+
+
+<script src="js/hw11.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 </body>
 </html>

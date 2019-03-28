@@ -77,16 +77,16 @@
 //     favourite: false
 //   }
 // ];
-//
-// const postsContainer = document.querySelector(".posts");
-// const postItem = document.querySelector("#postItem").innerHTML.trim();
-// const template = Handlebars.compile(postItem);
-// const favIicon = document.querySelector(".fav-icon");
-//
-// const postsList = posts.reduce((acc, item) => acc + template(item), "");
-//
-//
-// postsContainer.innerHTML = postsList;
+
+const postsContainer = document.querySelector(".posts");
+const postItem = document.querySelector("#postItem").innerHTML.trim();
+const template = Handlebars.compile(postItem);
+const favIicon = document.querySelector(".fav-icon");
+
+const postsList = posts.reduce((acc, item) => acc + template(item), "");
+
+
+postsContainer.innerHTML = postsList;
 
 // Модуль 11 доп 3
 /*
@@ -112,17 +112,17 @@
   Результат проверки, объект, выводить в консоль.
 */
 
-const firstname = document.getElementById("first_name");
-const lastname = document.getElementById("last_name");
-const submitBtn = document.getElementById("submit-btn");
-
-submitBtn.addEventListener("click", validate);
-
-function validate(evt) {
-  evt.preventDefault();
-  let bbb = /^[a-z]{2,}\s[a-z]{2,}$/ig;
-
-}
+// const firstname = document.getElementById("first_name");
+// const lastname = document.getElementById("last_name");
+// const submitBtn = document.getElementById("submit-btn");
+//
+// submitBtn.addEventListener("click", validate);
+//
+// function validate(evt) {
+//   evt.preventDefault();
+//   let bbb = /^[a-z]{2,}\s[a-z]{2,}$/ig;
+//
+// }
 
 
 

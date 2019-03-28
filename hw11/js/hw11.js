@@ -115,3 +115,44 @@ const laptops = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, beatae.',
   },
 ];
+
+let form = document.querySelector(".js-form");
+let btnFilter = document.querySelector("button[type='submit']");
+let btnClear = document.querySelector("button[type='reset']");
+
+let filter = { size: [], color: [], release_date: [] };
+
+function clear() {
+  filter = { size: [], color: [], release_date: [] };
+  console.log(filter);
+
+}
+
+form.addEventListener('click', (event) => {
+  if (event.target.type !== 'checkbox') return;
+
+  const checkbox = event.target;
+
+  if (filter[checkbox.name].includes(checkbox.value)) {
+    filter[checkbox.name] = filter[checkbox.name].filter(item => item !== checkbox.value);
+  } else {
+    filter[checkbox.name].push(checkbox.value);
+  }
+});
+
+btnFilter.addEventListener('click', (event) => {
+  event.preventDefault();
+  console.log('filter', filter);
+
+  const filterToUse = Object.keys(filter).filter(filterKey => filter[filterKey].length);
+
+  const laptopsList = laptops.filter(laptop => filterToUse.every(filterToUseKey => filter[filterToUseKey].includes(String(laptop[filterToUseKey]))));
+
+  console.log('result', laptopsList);
+});
+
+btnClear.addEventListener('click', clear);
+
+
+
+
