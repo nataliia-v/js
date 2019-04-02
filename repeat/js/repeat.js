@@ -962,5 +962,5 @@
       на 10px
 */
 
-let root = document.querySelector('')
+// let root = document.querySelector('')
 

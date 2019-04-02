@@ -92,7 +92,7 @@ function removeUser(event) {
       .catch(error => console.log('ERROR' + error));
   }
 }
-
+c
 function updateUser(event){
   event.preventDefault();
   let resultUpdate = inputUpdate.value;
