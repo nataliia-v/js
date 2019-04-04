@@ -206,10 +206,53 @@
 //4
 
 
+// task 1
+
+// Даны 3 инпута и кнопка. По нажатию на кнопку получите числа, стоящие в этих инпутах и запишите их сумму в четвертый инпут.
+
+// let inputs = document.querySelectorAll(".cls");
+// let btn = document.getElementById("task");
+// let sum = document.getElementById("sum");
+//
+// inputs = Array.from(inputs);
+//
+// let sumFnk = () => {
+//   inputs.forEach(input => {
+//     sum.value = +sum.value + (+input.value);
+//   })
+// };
+//
+// console.log(inputs);
+//
+// btn.addEventListener("click", sumFnk);
+
+// task 2
+// Даны N инпутов с классом .num и кнопка. По нажатию на кнопку получите числа, стоящие в этих инпутах и
+// запишите их сумму в абзац с id="result".
+
+// let inputs = document.querySelectorAll(".num");
+// const btn = document.getElementById("task");
+// let result = document.getElementById("result");
+// inputs = Array.from(inputs);
+//
+// let sumFunk = () => {
+// let a = inputs.reduce((acc, input) => acc + (+input.value), 0);
+//   result.textContent = a;
+// };
+//
+// btn.addEventListener("click", sumFunk);
+
+// task 3
+// Дан инпут. В него вводится число. По потери фокуса найдите сумму цифр этого числа.
+
+let input = document.getElementById("num");
+let result = document.getElementById("result");
+
+let sum = ()=>{
+  result.textContent = input.value;
+};
 
 
-
-
-
+.addEventListener('blur', sum);
 
 
